@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html laang="{{ str_replace('_', "_", app()->getLocale()) }}"></html>
+<html laang="{{ str_replace('_', "-", app()->getLocale()) }}"></html>
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+        <a href='/posts/create'>create</a>
         <h1>Blog Name</h1>
         <div class='post'>
             @foreach($posts as $post)
